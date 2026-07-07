@@ -31,13 +31,17 @@ android {
     }
 
     buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+        getByName("release") {
+            // Gunakan debug signing untuk testing lokal
             signingConfig = signingConfigs.getByName("debug")
+            
+            // Aktifkan penyusutan kode & Proguard
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), file("proguard-rules.pro"))
         }
-    }
-}
+    } // <--- INI KURUNG PENUTUP UNTUK buildTypes
+} // <--- INI KURUNG PENUTUP UNTUK android
 
 flutter {
     source = "../.."
