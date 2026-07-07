@@ -463,13 +463,19 @@ This project follows several software engineering principles.
 > Add your screenshots here.
 
 ```
-assets/readme/login.png
+assets/readme/loginMahasiswa.png
+
+assets/readme/loginDosenAsisten.png
 
 assets/readme/dashboard.png
 
 assets/readme/schedule.png
 
-assets/readme/pdf.png
+assets/readme/about.png
+
+assets/readme/jadwal.png
+
+
 ```
 
 ---
