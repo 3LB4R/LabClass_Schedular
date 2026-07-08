@@ -167,12 +167,15 @@ class _LoginPageState extends State<LoginPage> {
                                       selected: isLoginMahasiswa,
                                       showCheckmark: false,
                                       labelStyle: TextStyle(
+                                        // Teks Putih jika dipilih, Teks Hijau Tua jika tidak dipilih
                                         color: isLoginMahasiswa
                                             ? Colors.white
-                                            : Colors.black87,
+                                            : const Color(0xFF1B5E20),
                                         fontWeight: FontWeight.bold,
                                       ),
                                       selectedColor: const Color(0xFF1B5E20),
+                                      // Tambahkan ini agar warna chip saat tidak dipilih lebih terang
+                                      backgroundColor: const Color(0xFFE8F5E9),
                                       onSelected: (val) => setState(
                                         () => isLoginMahasiswa = true,
                                       ),
@@ -187,10 +190,12 @@ class _LoginPageState extends State<LoginPage> {
                                       labelStyle: TextStyle(
                                         color: !isLoginMahasiswa
                                             ? Colors.white
-                                            : Colors.black87,
+                                            : const Color(0xFF1B5E20),
                                         fontWeight: FontWeight.bold,
                                       ),
                                       selectedColor: const Color(0xFF1B5E20),
+                                      // Tambahkan ini agar warna chip saat tidak dipilih lebih terang
+                                      backgroundColor: const Color(0xFFE8F5E9),
                                       onSelected: (val) => setState(
                                         () => isLoginMahasiswa = false,
                                       ),
@@ -198,8 +203,6 @@ class _LoginPageState extends State<LoginPage> {
                                   ),
                                 ],
                               ),
-                              const SizedBox(height: 30),
-
                               // FORM INPUT PRO
                               if (isLoginMahasiswa) ...[
                                 TextField(

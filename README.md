@@ -461,9 +461,8 @@ This project follows several software engineering principles.
 # 📸 Screenshots
 
 > Add your screenshots here.
-
-```
-assets/readme/loginMahasiswa.png
+> ``
+> assets/readme/loginMahasiswa.png
 
 assets/readme/loginDosenAsisten.png
 
@@ -475,15 +474,14 @@ assets/readme/about.png
 
 assets/readme/jadwal.png
 
-
-```
+``
 
 ---
 
 # 📦 Dependencies
 
 ```yaml
-provider:
+provider: 
 
 sqflite:
 
